@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment-8</title>
+		<style>
+			p {
+				color: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<label>Choose your favoruite city</label><br/><br/>
+		<select id="city">
+			<option>Hyderabad</option>
+			<option>Vijayawada</option>
+			<option>Kolkata</option>
+			<option>Chennai</option>
+			<option>Mumbai</option>
+			<option>Banglore</option>
+			<option>Delhi</option>
+		</select>
+		<button onclick="readData()">Submit</button>
+		<p id="result"></p>
+		<script>
+			function readData() {
+				var c=document.getElementById('city').value;
+				document.getElementById('result').innerHTML=c;
+			}
+		</script>
+	</body>
